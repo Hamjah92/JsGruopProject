@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-Booking</title>
+    <script
+      src="https://kit.fontawesome.com/7f257b9379.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JqQuer links -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <!-- SwiperJS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- slick -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/gallery.css" />
+    <link rel="stylesheet" href="./booking.css" />
+  </head>
+  <body>
+    <header class="header booking-header" id="homeHeader">
+      <nav class="navbar">
+        <div class="container">
+          <h1 class="logo">T.N</h1>
+          <ul class="nav-items">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="../gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="../about.html">About</a></li>
+            <li class="nav-item"><a href="../contact.html">Contact</a></li>
+            <li class="nav-item booking-btn">
+              <a href="./booking/booking.html">Booking</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-content booking-header-content">
+        <h1 class="site-info main-heading">HOTELS, RESORTS, HOSTELS & MORE</h1>
+        <p class="site-desc">Get the best prices worldwide</p>
+      </div>
+    </header>
+    <main>
+      <section class="booking-form">
+        <div id="tabs" class="booking-hotel-tab">
+          <ul>
+            <li>
+              <i class="fas fa-duotone fa-mountain-city"></i
+              ><a href="#tabs-1">Hotels & Homes</a>
+            </li>
+            <li><a href="#tabs-2">Proin dolor</a></li>
+            <li><a href="#tabs-3">Aenean lacinia</a></li>
+          </ul>
+          <div id="tabs-1">
+            <form class="booking-hotel-form">
+              <!-- <label for="fname">First Name</label> -->
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="Enter a destination or property"
+              />
+              <div class="form-hotel-selection flex-row">
+                <div class="form-date flex-row">
+                  <!-- <label for="lname">Last Name</label> -->
+                  <input
+                    type="date"
+                    id="checkIn"
+                    name="checkIn"
+                    placeholder="check in"
+                  />
+                  <input
+                    type="date"
+                    id="checkOut"
+                    name="checkOut"
+                    placeholder="check out"
+                  />
+                </div>
+                <div class="form-country-select">
+                  <!-- <label for="country">Country</label> -->
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                </div>
+              </div>
+              <!-- <div class="form-hotel-submit"> -->
+              <input type="submit" value="Search" class="form-hotel-submit" />
+              <!-- </div> -->
+            </form>
+          </div>
+          <div id="tabs-2"></div>
+        </div>
+      </section>
+      <section>
+        <section id="welcome-text">
+          <div class="containers">
+            <h2>Top Destinations</h2>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="custom-slider">
+            <div class="booking-card">
+              <img src="../assets/img/India.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>India</p>
+              </div>
+            </div>
+            <div class="booking-card">
+              <img src="../assets/img/Australia/1.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>Australia</p>
+              </div>
+            </div>
+            <div class="booking-card">
+              <img src="../assets/img/USA/1.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>USA</p>
+              </div>
+            </div>
+            <div class="booking-card">
+              <img src="../assets/img/Canada/1.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>Canada</p>
+              </div>
+            </div>
+
+            <div class="booking-card">
+              <img src="../assets/img/switzerland.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>Switzerland</p>
+              </div>
+            </div>
+            <div class="booking-card">
+              <img src="../assets/img/France.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>France</p>
+              </div>
+            </div>
+            <div class="booking-card">
+              <img src="../assets/img/Dubai.jpg" alt="Avatar" />
+              <div class="booking-card-content">
+                <p>Dubai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bookin-hotels">
+        <div class="container">
+          <h2 class="lg-heading text-black">
+            Featured Hotels recommended for you
+          </h2>
+          <div class="bookin-hotels-cards">
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/edvin-johansson-rlwE8f8anOc-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>FabHotel Phoenix Resorts</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/francesca-saraco-_dS27XGgRyQ-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/qui-nguyen-giL2fHNr3Lc-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/sasha-kaunas-TAgGZWz6Qg8-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/the-anam-_twiIcIsp2s-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/valeriia-bugaiova-_pPHgeHz1uk-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/visualsofdana-T5pL6ciEn-I-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/antonio-janeski-VIGLnzEpOm4-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/3ohj90OT8o-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/roberto-nickson-MA82mPIZeGI-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <img
+                src="../assets/img/Hotels/reagan-m-d-eWGvLCZfQ-unsplash.jpg"
+                alt="Avatar"
+              />
+              <div class="hotel-card-content">
+                <h3>The Chancery Pavillion Hotel</h3>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <i class="fas fa-solid fa-star"></i>
+                <p>India</p>
+                <span> $ 200 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="booking.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </body>
+</html>
