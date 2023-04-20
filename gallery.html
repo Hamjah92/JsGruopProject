@@ -4,19 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/img/logo/logo.svg" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7f257b9379.js"
       crossorigin="anonymous"
     ></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/gallery.css" />
-    <title>Travel Website</title>
+
+    <title>Travel Next - Gallery</title>
   </head>
   <body>
     <header class="header" id="galleryHeader">
       <nav class="navbar">
-        <div class="container">
-          <h1 class="logo">T.N</h1>
+        <div class="container center">
+          <img class="logoImg" src="./assets/img/logo/logo.svg" alt="logo" />
           <ul class="nav-items">
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
@@ -32,10 +42,15 @@
       <div class="header-content">
         <h1 class="site-info main-heading">Travel Next</h1>
         <p class="site-desc">
-          Travel the world, experience the greatness, it's the best gift given
-          by nature
+          <span
+            class="typer"
+            id="main"
+            data-words="Show popular Destination in our Gallery"
+            data-delay="100"
+            data-deleteDelay="1000"
+            data-colors="white"></span>
+          <span class="cursor" data-cursorDisplay="_" data-owner="main"></span>
         </p>
-        <a href="#explore" class="button-primary">Explore Places</a>
       </div>
     </header>
 
@@ -61,7 +76,7 @@
             </div>
             <div class="slide_1 slide_4">
               <div class="slide-info">
-                <p>Savusavu</p>
+                <p>Savvu</p>
               </div>
             </div>
             <div class="slide_1 slide_5">
@@ -94,96 +109,121 @@
       </section>
       <section id="galleries">
         <div class="containers">
-          <div>
-            <div align="center" class="filter-btn-par">
-              <button class="filter-button active" data-filter="all">
-                ALL
-              </button>
-              <button class="filter-button" data-filter="diving">
-                AUSTRALIA
-              </button>
-              <button class="filter-button" data-filter="nature">USA</button>
-              <button class="filter-button" data-filter="health">CANADA</button>
+          <div align="center" class="filter-btn-par">
+            <button class="filter-button active" data-filter="all">ALL</button>
+            <button class="filter-button" data-filter="Gujarat">Gujarat</button>
+            <button class="filter-button" data-filter="Rajasthan">
+              Rajasthan
+            </button>
+            <button class="filter-button" data-filter="Kashmir">Kashmir</button>
+          </div>
+          <div class="filter-gallery-par">
+            <div class="galleries-item filter Gujarat">
+              <img
+                src="./assets/img/Gujarat/1.jpg"
+                alt=""
+                class="img-responsive"
+              />
             </div>
-            <div class="filter-gallery-par">
-              <div class="galleries-item filter diving">
-                <img
-                  src="./assets/img/Australia/1.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter diving">
-                <img
-                  src="./assets/img/Australia/2.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter diving">
-                <img
-                  src="./assets/img/Australia/3.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter diving">
-                <img
-                  src="./assets/img/Australia/7.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter diving">
-                <img
-                  src="./assets/img/Australia/5.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
+            <div class="galleries-item filter Gujarat">
+              <img
+                src="./assets/img/Gujarat/2.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Gujarat">
+              <img
+                src="./assets/img/Gujarat/3.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Gujarat">
+              <img
+                src="./assets/img/Gujarat/7.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Gujarat">
+              <img
+                src="./assets/img/Gujarat/5.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
 
-              <div class="galleries-item filter health">
-                <img
-                  src="./assets/img/USA/1.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter health">
-                <img
-                  src="./assets/img/USA/2.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter health">
-                <img
-                  src="./assets/img/USA/3.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter health">
-                <img
-                  src="./assets/img/USA/4.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter health">
-                <img
-                  src="./assets/img/USA/5.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
-              <div class="galleries-item filter health">
-                <img
-                  src="./assets/img/USA/6.jpg"
-                  alt=""
-                  class="img-responsive"
-                />
-              </div>
+            <div class="galleries-item filter Rajasthan">
+              <img
+                src="./assets/img/Rajasthan/1.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Rajasthan">
+              <img
+                src="./assets/img/Rajasthan/2.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Rajasthan">
+              <img
+                src="./assets/img/Rajasthan/3.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Rajasthan">
+              <img
+                src="./assets/img/Rajasthan/4.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Rajasthan">
+              <img
+                src="./assets/img/Rajasthan/5.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Rajasthan">
+              <img
+                src="./assets/img/Rajasthan/6.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+
+            <div class="galleries-item filter Kashmir">
+              <img
+                src="./assets/img/Kashmir/1.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Kashmir">
+              <img
+                src="./assets/img/Kashmir/2.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Kashmir">
+              <img
+                src="./assets/img/Kashmir/3.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="galleries-item filter Kashmir">
+              <img
+                src="./assets/img/Kashmir/4.jpg"
+                alt=""
+                class="img-responsive"
+              />
             </div>
           </div>
         </div>
@@ -195,10 +235,10 @@
         <div class="quick-links">
           <ul>
             <li><b>Quick Links</b></li>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Travel Stories</li>
+            <li class="link">Home</li>
+            <li class="link">About Us</li>
+            <li class="link">Contact</li>
+            <li class="link">Travel Stories</li>
           </ul>
         </div>
 
@@ -230,7 +270,8 @@
         <i class="fab fa-instagram fa-4x"></i>
         <i class="fa fa-wordpress fa-4x" aria-hidden="true"></i>
       </div>
-      <p>Travel Next &copy; 2021, All Rights Reserved</p>
+      <p>Travel Next &copy; 2023, All Rights Reserved</p>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

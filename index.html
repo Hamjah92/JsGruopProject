@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/img/logo/logo.svg" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/7f257b9379.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Travel Website</title>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+    <title>Travel Next - Home</title>
   </head>
   <body>
     <header class="header" id="homeHeader">
       <nav class="navbar">
-        <div class="container">
-          <h1 class="logo">T.N</h1>
+        <div class="container center">
+          <img class="logoImg" src="./assets/img/logo/logo.svg" alt="logo" />
           <ul class="nav-items">
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
@@ -27,17 +35,20 @@
           </ul>
         </div>
       </nav>
-
       <div class="header-content">
-        <h1 class="site-info main-heading">Travel Next</h1>
-        <p class="site-desc">
-          Travel the world, experience the greatness, it's the best gift given
-          by nature
-        </p>
-        <a href="#explore" class="button-primary">Explore Places</a>
+        <h1 class="site-info main-heading">
+          <span
+          class="typer"
+          id="main"
+          data-words="Travel Next"
+          data-delay="100"
+          data-deleteDelay="1000"
+          data-colors="white"></span>
+        <span class="cursor" data-cursorDisplay="_" data-owner="main"></span>
+        </h1>
+        <a href="./gallery.html" class="button-primary">Explore Places</a>
       </div>
     </header>
-
     <section class="showcase" id="explore">
       <div class="container">
         <div class="row row1">
@@ -147,10 +158,10 @@
         <div class="quick-links">
           <ul>
             <li><b>Quick Links</b></li>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
-            <li>Travel Stories</li>
+            <li class="link">Home</li>
+            <li class="link">About Us</li>
+            <li class="link">Contact</li>
+            <li class="link">Travel Stories</li>
           </ul>
         </div>
 
@@ -182,7 +193,7 @@
         <i class="fab fa-instagram fa-4x"></i>
         <i class="fa fa-wordpress fa-4x" aria-hidden="true"></i>
       </div>
-      <p>Travel Next &copy; 2021, All Rights Reserved</p>
+      <p>Travel Next &copy; 2023, All Rights Reserved</p>
     </footer>
   </body>
 </html>
