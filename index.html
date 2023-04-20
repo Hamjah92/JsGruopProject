@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7f257b9379.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="./assets/img/logo/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Travel Website</title>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
+    <title>Travel Next - Home</title>
+
 </head>
 
 <body>
@@ -18,24 +27,36 @@
         <nav class="navbar" style="z-index: 2;position: relative;">
             <div class="container">
 
-                <h1 class="logo">T.N</h1>
+                <img class="logoImg" src="./assets/img/logo/logo.svg" alt="logo" />
+
                 <ul class="nav-items">
                     <li class="nav-item"><a href="./index.html">Home</a></li>
                     <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
                     <li class="nav-item"><a href="./about.html">About</a></li>
                     <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-item booking-btn">
+                        <a href="./booking/booking.html">Booking</a>
+                      </li>
+          
                 </ul>
 
             </div>
         </nav>
 
-        <div class="header-content" style="z-index: 2;">
-            <h1 class="site-info main-heading">Travel Next</h1>
-            <p class="site-desc">Travel the world, experience the greatness, it's the best gift given by nature</p>
-            <a href="#explore" class="button-primary">Explore Places</a>
-        </div>
+        <div class="header-content"  style="z-index: 2;">
+            <h1 class="site-info main-heading">
+              <span
+              class="typer"
+              id="main"
+              data-words="Travel Next"
+              data-delay="100"
+              data-deleteDelay="1000"
+              data-colors="white"></span>
+            <span class="cursor" data-cursorDisplay="_" data-owner="main"></span>
+            </h1>
+            <a href="./gallery.html" class="button-primary">Explore Places</a>
+          </div>
     </header>
-
     <section class="showcase" id="explore">
         <div class="container">
             <div class="row row1" id="ele1">
@@ -95,6 +116,7 @@
         </div>
     </section>
 
+
     <section class="features">
         <div class="container">
 
@@ -124,44 +146,46 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer-info">
-            <div class="quick-links">
-                <ul>
-                    <li><b>Quick Links</b></li>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact</li>
-                    <li>Travel Stories</li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <ul>
-                    <li><b>Contact</b></li>
-                    <li>10th floor, M.G Road, Bangalore-461365</li>
-                    <li><i class="fa fa-envelope" aria-hidden="true"></i>travelnext@domain.com</li>
-                    <li><i class="fa fa-phone fa-flip-horizontal"></i>+91-1150568508</li>
-                </ul>
-            </div>
-
-            <div class="subscribe-form">
-
-                <form>
-                    <input type="email" name="email" placeholder="example@gmail.com">
-                    <button>Subscribe</button>
-                </form>
-                <p>Subscribe to our weekly Newsletter.</p>
-
-            </div>
-
+      <div class="footer-info">
+        <div class="quick-links">
+          <ul>
+            <li><b>Quick Links</b></li>
+            <li class="link">Home</li>
+            <li class="link">About Us</li>
+            <li class="link">Contact</li>
+            <li class="link">Travel Stories</li>
+          </ul>
         </div>
-        <div class="social-media-links">
-            <i class="fab fa-facebook fa-4x"></i>
-            <i class="fab fa-twitter fa-4x"></i>
-            <i class="fab fa-instagram fa-4x"></i>
-            <i class="fa fa-wordpress fa-4x" aria-hidden="true"></i>
+
+        <div class="contact">
+          <ul>
+            <li><b>Contact</b></li>
+            <li>10th floor, M.G Road, Bangalore-461365</li>
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i
+              >travelnext@domain.com
+            </li>
+            <li>
+              <i class="fa fa-phone fa-flip-horizontal"></i>+91-1150568508
+            </li>
+          </ul>
         </div>
-        <p>Travel Next &copy; 2021, All Rights Reserved</p>
+
+        <div class="subscribe-form">
+          <form>
+            <input type="email" name="email" placeholder="example@gmail.com" />
+            <button>Subscribe</button>
+          </form>
+          <p>Subscribe to our weekly Newsletter.</p>
+        </div>
+      </div>
+      <div class="social-media-links">
+        <i class="fab fa-facebook fa-4x"></i>
+        <i class="fab fa-twitter fa-4x"></i>
+        <i class="fab fa-instagram fa-4x"></i>
+        <i class="fa fa-wordpress fa-4x" aria-hidden="true"></i>
+      </div>
+      <p>Travel Next &copy; 2023, All Rights Reserved</p>
     </footer>
     <script>
         $(window).on('scroll', function () {
