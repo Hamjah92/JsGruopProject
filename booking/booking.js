@@ -1,3 +1,5 @@
+//  Author: Vaibhav Arora 
+
 "use strict";
 $(document).ready(() => {
   $("#tabs").tabs({
@@ -10,20 +12,6 @@ $(document).ready(() => {
       "ui-tabs-anchor": "booking-hotel-nav-item-anchor",
     },
   });
-
-  // var swiper = new Swiper(".mySwiper", {
-  //   slidesPerView: 3,
-  //   centeredSlides: true,
-  //   spaceBetween: 30,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     type: "fraction",
-  //   },
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
 
   $(".custom-slider").slick({
     infinite: true,

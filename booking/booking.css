@@ -1,3 +1,5 @@
+  /* CSS by - Vaibhav Arora - Start*/
+
 input[type="text"],
 input[type="date"],
 select {
@@ -27,7 +29,7 @@ input[type="submit"]:hover {
 
 .booking-header {
   height: 60vh;
-  margin-bottom: 125px;
+  margin-bottom: 150px;
 }
 
 .booking-header-content {
@@ -51,8 +53,9 @@ input[type="submit"]:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 6px 2px;
   background-color: #fff;
   position: absolute;
-  top: -10%;
+  top: -13%;
   left: 25%;
+  border-radius: 5px;
 }
 
 .booking-hotel-nav-item {
@@ -68,7 +71,7 @@ input[type="submit"]:hover {
 }
 
 .booking-hotel-nav-item-anchor {
-  padding: 0 !important;
+  padding: 10px 20px !important;
 }
 
 .booking-hotel-nav-item-active a {
@@ -76,7 +79,7 @@ input[type="submit"]:hover {
 }
 
 .booking-hotel-form {
-  padding: 10px 30px 30px;
+  padding: 30px 30px;
 }
 
 .flex-row {
@@ -164,18 +167,19 @@ input[type="submit"]:hover {
   margin-top: 5px;
 }
 
-.bookin-hotels {
+.booking-hotels {
   margin-top: 50px;
 }
 
-.bookin-hotels h2 {
+.booking-hotels h2 {
   text-align: center;
   font-size: 30px;
   letter-spacing: 0;
 }
-.bookin-hotels-cards {
+.booking-hotels-cards {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .hotel-card {
@@ -208,3 +212,5 @@ input[type="submit"]:hover {
 .fa-star {
   color: #45a049;
 }
+
+  /* CSS by - Vaibhav Arora - End*/
