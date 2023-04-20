@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7f257b9379.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Travel Website</title>
 </head>
+
 <body>
     <header class="header" id="homeHeader">
-        <nav class="navbar">
+        <div id="overlay"></div>
+        <nav class="navbar" style="z-index: 2;position: relative;">
             <div class="container">
 
                 <h1 class="logo">T.N</h1>
                 <ul class="nav-items">
-                <li class="nav-item"><a href="./index.html">Home</a></li>
-                <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
-                <li class="nav-item"><a href="./about.html">About</a></li>
-                <li class="nav-item"><a href="./contact.html">Contact</a></li>
-            </ul>
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a href="./about.html">About</a></li>
+                    <li class="nav-item"><a href="./contact.html">Contact</a></li>
+                </ul>
 
             </div>
         </nav>
 
-        <div class="header-content">
+        <div class="header-content" style="z-index: 2;">
             <h1 class="site-info main-heading">Travel Next</h1>
             <p class="site-desc">Travel the world, experience the greatness, it's the best gift given by nature</p>
             <a href="#explore" class="button-primary">Explore Places</a>
@@ -33,50 +38,63 @@
 
     <section class="showcase" id="explore">
         <div class="container">
-            <div class="row row1">
+            <div class="row row1" id="ele1">
+
                 <div class="img-box">
                     <img src="./assets/img/agra.jpg" alt="Research Centre">
                 </div>
                 <div class="text-box">
                     <h2>Agra, India</h2>
-                    <p>The magical allure of the Taj Mahal draws tourists to Agra like moths to a wondrous flame. And despite the hype, it’s every bit as good as you’ve heard. But the Taj is not a stand-alone attraction. The legacy of the Mughal empire has left a magnificent fort and a liberal sprinkling of fascinating tombs and mausoleums, and there’s also fun to be had in the bustling chowks (marketplaces). </p>
-                <p><a href="./about.html" class="button-secondary">More</a></p>
+                    <p>The magical allure of the Taj Mahal draws tourists to Agra like moths to a wondrous flame. And
+                        despite the hype, it’s every bit as good as you’ve heard. But the Taj is not a stand-alone
+                        attraction. The legacy of the Mughal empire has left a magnificent fort and a liberal sprinkling
+                        of fascinating tombs and mausoleums, and there’s also fun to be had in the bustling chowks
+                        (marketplaces). </p>
+                    <p><a href="./about.html" class="button-secondary">More</a></p>
                 </div>
             </div>
-            <div class="row row2">
+            <div class="row row2" id="ele2">
                 <div class="img-box">
                     <img src="./assets/img/kolkata.jpg" alt="Tree">
                 </div>
                 <div class="text-box">
                     <h2>Kolkata, India</h2>
-                    <p>India’s third-largest city is a daily festival of human existence, simultaneously noble and squalid, cultured and desperate, decidedly futuristic while splendid in decay. By its old spelling, Calcutta readily conjures images of human suffering to most Westerners – although that's not a complete picture of this 330-year-old metropolis.</p>
-                <p><a href="./about.html" class="button-secondary">More</a></p>
+                    <p>India’s third-largest city is a daily festival of human existence, simultaneously noble and
+                        squalid, cultured and desperate, decidedly futuristic while splendid in decay. By its old
+                        spelling, Calcutta readily conjures images of human suffering to most Westerners – although
+                        that's not a complete picture of this 330-year-old metropolis.</p>
+                    <p><a href="./about.html" class="button-secondary">More</a></p>
                 </div>
             </div>
-            <div class="row row1">
+            <div class="row row1 ele3">
                 <div class="img-box">
                     <img src="./assets/img/munnar.jpg" alt="Research Centre">
                 </div>
                 <div class="text-box">
                     <h2>Munnar, India</h2>
-                    <p>Sprawling tea plantations surround the serene hills of Munnar, which attract adventure travelers hungry for paragliding, treks to Anaimudi (South India's highest peak) and hikes originating at the confluence of three mountain streams.  </p>
-                <p><a href="./about.html" class="button-secondary">More</a></p>
+                    <p>Sprawling tea plantations surround the serene hills of Munnar, which attract adventure travelers
+                        hungry for paragliding, treks to Anaimudi (South India's highest peak) and hikes originating at
+                        the confluence of three mountain streams. </p>
+                    <p><a href="./about.html" class="button-secondary">More</a></p>
                 </div>
             </div>
-            <div class="row row2">
+            <div class="row row2 ele4">
                 <div class="img-box">
                     <img src="./assets/img/ladakh.jpg" alt="Tree">
                 </div>
                 <div class="text-box">
                     <h2>Ladakh, India</h2>
-                    <p>The landscape of Ladhak, a high altitude desert, is defined by craggy, barren cliffs and plateaus. Ladhak is a favourite among adventure sports enthusiasts, offering unique adventures in trekking, mountaineering and white water rafting. While rafting options are available on both Indus and Zanskar rivers, the Zanskar course is more difficult and exciting.</p>
-                <p><a href="./about.html" class="button-secondary">More</a></p>
+                    <p>The landscape of Ladhak, a high altitude desert, is defined by craggy, barren cliffs and
+                        plateaus. Ladhak is a favourite among adventure sports enthusiasts, offering unique adventures
+                        in trekking, mountaineering and white water rafting. While rafting options are available on both
+                        Indus and Zanskar rivers, the Zanskar course is more difficult and exciting.</p>
+                    <p><a href="./about.html" class="button-secondary">More</a></p>
                 </div>
             </div>
-            
+
         </div>
     </section>
-    
+
     <section class="features">
         <div class="container">
 
@@ -84,20 +102,23 @@
                 <div class="box box-1">
                     <i class="fas fa-route fa-2x"></i>
                     <h2 class="md-heading">Adventurous</h2>
-                    <p>Do you seek the thrill of discovering vast new environments? If you answered yes, Travel Next is the best way to plan your next epic adventure. Let's Go!</p>
+                    <p>Do you seek the thrill of discovering vast new environments? If you answered yes, Travel Next is
+                        the best way to plan your next epic adventure. Let's Go!</p>
                 </div>
                 <div class="box box-2">
                     <i class="fas fa-rupee-sign fa-2x"></i>
                     <h2 class="md-heading">Less Price</h2>
-                    <p>Travelling is not a hobby, it is rather a way of life, a necessity in order to survive the everyday drudgery. Pay less and travel to dream wth Travel Next! Let's Go!</p'>
+                    <p>Travelling is not a hobby, it is rather a way of life, a necessity in order to survive the
+                        everyday drudgery. Pay less and travel to dream wth Travel Next! Let's Go!</p'>
                 </div>
                 <div class="box box-3">
                     <i class="fas fa-snowboarding fa-2x"></i>
                     <h2 class="md-heading">Experience</h2>
-                    <p>Ancient, wild and colourful India is a place to behold. Too vast and diverse to encapsulate in words, this country needs to be experienced with the senses. 
+                    <p>Ancient, wild and colourful India is a place to behold. Too vast and diverse to encapsulate in
+                        words, this country needs to be experienced with the senses.
                     </p>
                 </div>
-    
+
             </div>
 
         </div>
@@ -106,31 +127,31 @@
         <div class="footer-info">
             <div class="quick-links">
                 <ul>
-                   <li><b>Quick Links</b></li>
-                   <li>Home</li>
-                   <li>About Us</li>
-                   <li>Contact</li>
-                   <li>Travel Stories</li>
+                    <li><b>Quick Links</b></li>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Travel Stories</li>
                 </ul>
-           </div>
-          
+            </div>
+
             <div class="contact">
                 <ul>
                     <li><b>Contact</b></li>
                     <li>10th floor, M.G Road, Bangalore-461365</li>
                     <li><i class="fa fa-envelope" aria-hidden="true"></i>travelnext@domain.com</li>
-                    <li><i class="fa fa-phone fa-flip-horizontal" ></i>+91-1150568508</li>
+                    <li><i class="fa fa-phone fa-flip-horizontal"></i>+91-1150568508</li>
                 </ul>
-             </div>
-          
+            </div>
+
             <div class="subscribe-form">
-               
-                 <form>
+
+                <form>
                     <input type="email" name="email" placeholder="example@gmail.com">
                     <button>Subscribe</button>
-                 </form>
-                 <p>Subscribe to our weekly Newsletter.</p>
-               
+                </form>
+                <p>Subscribe to our weekly Newsletter.</p>
+
             </div>
 
         </div>
@@ -142,5 +163,30 @@
         </div>
         <p>Travel Next &copy; 2021, All Rights Reserved</p>
     </footer>
+    <script>
+        $(window).on('scroll', function () {
+            var $window = $(window);
+
+            var docViewTop = $window.scrollTop();
+            var docViewBottom = docViewTop + $window.height();
+            $('.row').each(function (index) {
+                var $elem = $(this);
+                var elemTop = $elem.offset().top;
+                if (elemTop < docViewBottom) {
+                    $elem.addClass(index % 2 != 0 ? 'animate__fadeInBottomRight' : 'animate__fadeInBottomLeft')
+                }
+            })
+        });
+
+        $('#overlay').addClass('animatedHeader');
+        let arr =  ['website-background','back1','back2'];
+        let i=1;
+        setInterval(()=>{
+            document.querySelector('#homeHeader').style.backgroundImage = `url('./assets/img/${arr[i]}.jpg')`;
+            i++;
+            if(i==3) i=0;
+        },3000);
+    </script>
 </body>
+
 </html>
