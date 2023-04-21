@@ -20,3 +20,34 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 });
+
+// 
+$(window).on("scroll", function () {
+  var $window = $(window);
+
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  $(".row").each(function (index) {
+    var $elem = $(this);
+    var elemTop = $elem.offset().top;
+    if (elemTop < docViewBottom) {
+      $elem.addClass(
+        index % 2 != 0
+          ? "animate__fadeInBottomRight"
+          : "animate__fadeInBottomLeft"
+      );
+    }
+  });
+});
+
+$("#overlay").addClass("animatedHeader");
+let arr = ["website-background", "back1", "back2"];
+let i = 1;
+setInterval(() => {
+  document.querySelector(
+    "#homeHeader"
+  ).style.backgroundImage = `url('./assets/img/${arr[i]}.jpg')`;
+  i++;
+  if (i == 3) i = 0;
+}, 3000);
+

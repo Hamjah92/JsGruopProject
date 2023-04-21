@@ -51,15 +51,10 @@ form.addEventListener("submit", (event) => {
   }
   if (isValid) {
     // clear inputs
-    usernameInput.value = "";
-    phoneInput.value = "";
-    emailInput.value = "";
-    messageInput.value = "";
 
     emailjs.sendForm("test_project1email", "template_e7cugi9", form).then(
       // If the form submission is successful, hide the booking form and display the booking confirmation div.
       function () {
-        console.log("success");
         Swal.fire({
           position: "top-end",
           icon: "success",
@@ -67,6 +62,11 @@ form.addEventListener("submit", (event) => {
           showConfirmButton: false,
           timer: 1500,
         });
+
+        usernameInput.value = "";
+        phoneInput.value = "";
+        emailInput.value = "";
+        messageInput.value = "";
       }
     );
   }
