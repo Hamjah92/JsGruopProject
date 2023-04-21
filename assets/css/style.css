@@ -663,7 +663,9 @@ section#welcome-text h2 {
 }
 
 /* ######################## CONTACT FORM ####################### */
-
+.error-message{
+  color : red;
+}
 
 .contact-background{
     background-image: url(../img/website-background.jpg);

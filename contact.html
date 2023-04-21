@@ -65,7 +65,7 @@
               <h2>CALL</h2>
               <p>+33-1250598568</p>
             </div>
-            <form action="" class="form">
+            <form action="" class="form" id="form-contact">
               <h1>Contact Us</h1>
               <p>
                 Let us know your questions, suggestions and concerns by filling
@@ -77,89 +77,92 @@
                 <input
                   type="text"
                   placeholder="Full Name"
-                  name=""
+                  name="username"
                   id="username"
-                  required
                 />
+                <span class="error-message" id="username-error"></span>
               </div>
+
               <div class="form-group">
                 <label for="phone">Phone</label>
                 <input
                   type="text"
                   placeholder="999-999-9999"
-                  name=""
+                  name="phone"
                   id="phone"
-                  required
                 />
+                <span class="error-message" id="phone-error"></span>
               </div>
+
               <div class="form-group">
                 <label for="email">Email</label>
                 <input
                   type="text"
                   placeholder="abcfhoogjej@adif.com"
-                  name=""
+                  name="email"
                   id="email"
-                  required
                 />
+                <span class="error-message" id="email-error"></span>
               </div>
+
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea name="" id="message" required></textarea>
+                <textarea name="message" id="message"></textarea>
+                <span class="error-message" id="message-error"></span>
               </div>
+
               <button type="submit" class="form-btn">Submit</button>
-              <div class="testimonials">
-                <div class="test1">
-                  <img
-                    class="test-image"
-                    src="./assets/img/test.woman.pic1.jpg"
-                    alt="Woman image1"
-                  />
-                  <p class="test-para">
-                    "As a woman who loves to travel, I can confidently say that
-                    my experience with Travel Next has been nothing short of
-                    exceptional. Their expertly curated itineraries have taken
-                    me on unforgettable journeys, introducing me to new cultures
-                    and hidden gems that I never would have found on my own."
-                  </p>
-                  <p class="test-para">Salama Khalid<br />-New customer</p>
-                </div>
-                <div class="test2">
-                  <img
-                    class="test-image"
-                    src="./assets/img/test.man.pic2.jpg"
-                    alt="Man image"
-                  />
-                  <p class="test-para">
-                    "As a traveler, I've had the pleasure of booking several
-                    trips with Travel Next and I can honestly say they are
-                    second to none. Their attention to detail, knowledgeable
-                    guides, and carefully planned out itineraries have made each
-                    trip an unforgettable adventure. I appreciate how they go
-                    the extra mile to ensure that every aspect of my trip is
-                    taken care of."
-                  </p>
-                  <p class="test-para">James Keen<br />-loyal customer</p>
-                </div>
-                <div class="test3">
-                  <img
-                    class="test-image"
-                    src="./assets/img/test.woman.pic3.jpg"
-                    alt="Woman image2"
-                  />
-                  <p class="test-para">
-                    "As a girl with a passion for travel, I've been blown away
-                    by the level of service and attention to detail provided by
-                    [Travel Company]. Their team has been incredibly helpful in
-                    curating unique and personalized experiences that have taken
-                    my travels to the next level. Whether it's exploring
-                    bustling cities or relaxing on secluded beaches, every trip
-                    has been perfectly tailored to my interests and
-                    preferences."
-                  </p>
-                  <p class="test-para">Mary Jane<br />-Travel Blogger</p>
-                </div>
-              </div>
             </form>
+            <div class="testimonials">
+              <div class="test1">
+                <img
+                  class="test-image"
+                  src="./assets/img/test.woman.pic1.jpg"
+                  alt="Woman image1"
+                />
+                <p class="test-para">
+                  "As a woman who loves to travel, I can confidently say that my
+                  experience with Travel Next has been nothing short of
+                  exceptional. Their expertly curated itineraries have taken me
+                  on unforgettable journeys, introducing me to new cultures and
+                  hidden gems that I never would have found on my own."
+                </p>
+                <p class="test-para">Salama Khalid<br />-New customer</p>
+              </div>
+              <div class="test2">
+                <img
+                  class="test-image"
+                  src="./assets/img/test.man.pic2.jpg"
+                  alt="Man image"
+                />
+                <p class="test-para">
+                  "As a traveler, I've had the pleasure of booking several trips
+                  with Travel Next and I can honestly say they are second to
+                  none. Their attention to detail, knowledgeable guides, and
+                  carefully planned out itineraries have made each trip an
+                  unforgettable adventure. I appreciate how they go the extra
+                  mile to ensure that every aspect of my trip is taken care of."
+                </p>
+                <p class="test-para">James Keen<br />-loyal customer</p>
+              </div>
+              <div class="test3">
+                <img
+                  class="test-image"
+                  src="./assets/img/test.woman.pic3.jpg"
+                  alt="Woman image2"
+                />
+                <p class="test-para">
+                  "As a girl with a passion for travel, I've been blown away by
+                  the level of service and attention to detail provided by
+                  [Travel Company]. Their team has been incredibly helpful in
+                  curating unique and personalized experiences that have taken
+                  my travels to the next level. Whether it's exploring bustling
+                  cities or relaxing on secluded beaches, every trip has been
+                  perfectly tailored to my interests and preferences."
+                </p>
+                <p class="test-para">Mary Jane<br />-Travel Blogger</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -208,4 +211,6 @@
       <p>Travel Next &copy; 2023, All Rights Reserved</p>
     </footer>
   </body>
+  <script src="./assets/js/validation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
