@@ -703,18 +703,12 @@ button.filter-button.active {
 }
 
 /* ######################## CONTACT FORM ####################### */
-<<<<<<< HEAD
 .error-message{
   color : red;
 }
 
 .contact-background{
     background-image: url(../img/website-background.jpg);
-=======
-
-.contact-background {
-  background-image: url(../img/website-background.jpg);
->>>>>>> e6f1a4821b23b98c2a1134ee3bce17a6de1346fd
 }
 .contact-form {
   padding: 5rem 0;
