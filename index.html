@@ -4,26 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7f257b9379.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link
       rel="shortcut icon"
       href="./assets/img/logo/logo.svg"
       type="image/x-icon"
     />
     <link rel="icon" href="./assets/img/logo/logo.svg" type="image/x-icon" />
-    <script
-      src="https://kit.fontawesome.com/7f257b9379.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 
     <title>Travel Next - Home</title>
   </head>
+
   <body>
     <header class="header" id="homeHeader">
-      <nav class="navbar">
-        <div class="container center">
+      <div id="overlay"></div>
+      <nav class="navbar" style="z-index: 2; position: relative">
+        <div class="container">
           <img class="logoImg" src="./assets/img/logo/logo.svg" alt="logo" />
+
           <ul class="nav-items">
             <li class="nav-item"><a href="./index.html">Home</a></li>
             <li class="nav-item"><a href="./gallery.html">Gallery</a></li>
@@ -37,7 +45,8 @@
           </ul>
         </div>
       </nav>
-      <div class="header-content">
+
+      <div class="header-content" style="z-index: 2">
         <h1 class="site-info main-heading">
           <span
             class="typer"
@@ -54,7 +63,7 @@
     </header>
     <section class="showcase" id="explore">
       <div class="container">
-        <div class="row row1">
+        <div class="row row1" id="ele1">
           <div class="img-box">
             <img src="./assets/img/agra.jpg" alt="Research Centre" />
           </div>
@@ -71,7 +80,7 @@
             <p><a href="./about.html" class="button-secondary">More</a></p>
           </div>
         </div>
-        <div class="row row2">
+        <div class="row row2" id="ele2">
           <div class="img-box">
             <img src="./assets/img/kolkata.jpg" alt="Tree" />
           </div>
@@ -88,7 +97,7 @@
             <p><a href="./about.html" class="button-secondary">More</a></p>
           </div>
         </div>
-        <div class="row row1">
+        <div class="row row1 ele3">
           <div class="img-box">
             <img src="./assets/img/munnar.jpg" alt="Research Centre" />
           </div>
@@ -103,7 +112,7 @@
             <p><a href="./about.html" class="button-secondary">More</a></p>
           </div>
         </div>
-        <div class="row row2">
+        <div class="row row2 ele4">
           <div class="img-box">
             <img src="./assets/img/ladakh.jpg" alt="Tree" />
           </div>
@@ -198,5 +207,35 @@
       </div>
       <p>Travel Next &copy; 2023, All Rights Reserved</p>
     </footer>
+    <script>
+      $(window).on("scroll", function () {
+        var $window = $(window);
+
+        var docViewTop = $window.scrollTop();
+        var docViewBottom = docViewTop + $window.height();
+        $(".row").each(function (index) {
+          var $elem = $(this);
+          var elemTop = $elem.offset().top;
+          if (elemTop < docViewBottom) {
+            $elem.addClass(
+              index % 2 != 0
+                ? "animate__fadeInBottomRight"
+                : "animate__fadeInBottomLeft"
+            );
+          }
+        });
+      });
+
+      $("#overlay").addClass("animatedHeader");
+      let arr = ["website-background", "back1", "back2"];
+      let i = 1;
+      setInterval(() => {
+        document.querySelector(
+          "#homeHeader"
+        ).style.backgroundImage = `url('./assets/img/${arr[i]}.jpg')`;
+        i++;
+        if (i == 3) i = 0;
+      }, 3000);
+    </script>
   </body>
 </html>
