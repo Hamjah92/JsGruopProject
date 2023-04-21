@@ -92,6 +92,11 @@ li {
     url("../img/galleryHero.jpg");
 }
 
+.navbar {
+  z-index: 2;
+  position: relative;
+}
+
 .navbar .logo {
   float: left;
   font-size: 3.5rem;
@@ -187,6 +192,7 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
+  z-index: 2;
 }
 
 /* Gallery page */
@@ -703,12 +709,12 @@ button.filter-button.active {
 }
 
 /* ######################## CONTACT FORM ####################### */
-.error-message{
-  color : red;
+.error-message {
+  color: red;
 }
 
-.contact-background{
-    background-image: url(../img/website-background.jpg);
+.contact-background {
+  background-image: url(../img/website-background.jpg);
 }
 .contact-form {
   padding: 5rem 0;

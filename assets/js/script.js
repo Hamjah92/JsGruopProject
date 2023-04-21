@@ -21,7 +21,7 @@ $(document).ready(function () {
   });
 });
 
-// 
+//
 $(window).on("scroll", function () {
   var $window = $(window);
 
@@ -44,10 +44,10 @@ $("#overlay").addClass("animatedHeader");
 let arr = ["website-background", "back1", "back2"];
 let i = 1;
 setInterval(() => {
-  document.querySelector(
-    "#homeHeader"
-  ).style.backgroundImage = `url('./assets/img/${arr[i]}.jpg')`;
+  let homeHeader = document.querySelector("#homeHeader");
+  if (homeHeader) {
+    homeHeader.style.backgroundImage = `url('./assets/img/${arr[i]}.jpg')`;
+  }
   i++;
   if (i == 3) i = 0;
 }, 3000);
-

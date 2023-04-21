@@ -22,6 +22,20 @@ $(document).ready(() => {
   });
 });
 
+$(window).on("scroll", function () {
+  var $window = $(window);
+
+  var docViewTop = $window.scrollTop();
+  var docViewBottom = docViewTop + $window.height();
+  $(".booking-hotels").each(function (index) {
+    var $elem = $(this);
+    var elemTop = $elem.offset().top;
+    if (elemTop < docViewBottom) {
+      $elem.addClass("animate__animated animate__fadeInUpBig");
+    }
+  });
+});
+
 //  Java Script Code
 
 const nodeSelector = (selector) => document.querySelector(selector);
