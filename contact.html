@@ -17,9 +17,9 @@
       crossorigin="anonymous"
     ></script>
     <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-  ></script>
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
       (function () {
         emailjs.init("4JtzkfyUG_u8BYnfq");
@@ -102,6 +102,7 @@
                   placeholder="999-999-9999"
                   name="phone"
                   id="phone"
+                  pattern="\d{3}[\-]\d{3}[\-]\d{4}"
                 />
                 <span class="error-message" id="phone-error"></span>
               </div>
